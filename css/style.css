@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 * {
     margin: 0;
     padding: 0 ;
     box-sizing: border-box !important;
-    font-size: 16.5px;
+    font-size: 17.5px;
+    
     
 }
 body{
   overflow-x: hidden !important;
+  font-family: "Oxygen";
    
 }
 
