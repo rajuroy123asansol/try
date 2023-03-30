@@ -273,4 +273,14 @@ footer a{
  .about_text{
    padding-left: 20px;
  }
+ #info{
+   background: url(../media/blob.svg);
+   background-position: top right;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-color: #8B8B8B;
+ }
+ .splide {
+   padding-top: 40px !important;
+ }
 }
