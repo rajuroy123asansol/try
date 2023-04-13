@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 9;
+  align-items: center;
+  justify-content: center ;
+  width: 100vw;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+#lightbox{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #000000C4;
+  position: fixed;
+  z-index: 9999 !important;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+  
+  
+}
+i{
+  color: #FFFFFF;
+}
+#lightbox img{
+ object-fit: contain;
+  max-width: 90%;
+  max-height: 100%;
+  box-shadow: 2px 2px 20px #EDEDED;
+}
+#close{
+  align-self: flex-start; 
+  font-weight: 120px;
+  font-size: 30px;
+  position :fixed;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
