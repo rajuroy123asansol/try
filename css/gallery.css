@@ -24,14 +24,41 @@ body{
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  margin-bottom: 30px;
+
 }
 
+.caption-container{
+  position: absolute;
+  width: 90%;
+  bottom: 0px;
+  background: white;
+  border-radius: 0 5px 5px 5px;
+  padding-left: 15px;
+  box-shadow: 5px 5px 20px #040404;
+  
+}
+.caption-container::before{
+  content: "";
+  border-left: 25px solid transparent;
+  border-right: 15px solid transparent;
+  
+  border-bottom: 25px solid white;
+  left:0;
+  position: absolute;
+  top:-12.5px;
+  transform: translateY(-50%);
+
+}
+.img-container{
+  position: relative;
+}
 
 #lightbox{
   width: 100vw;
   height: 100vh;
   top: 0;
-  background: #000000C4;
+  background: #0197A6CC;
   position: fixed;
   z-index: 9999 !important;
   display: none;
@@ -49,8 +76,8 @@ i{
  object-fit: contain;
   max-width: 90%;
   max-height: 100%;
-  box-shadow: 2px 2px 20px #EDEDED;
 }
+
 #close{
   align-self: flex-start; 
   font-weight: 120px;
