@@ -33,12 +33,13 @@ body{
   width: 90%;
   bottom: 0px;
   background: white;
-  border-radius: 0 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   padding-left: 15px;
+  padding-top: 10px;
   box-shadow: 5px 5px 20px #040404;
-  
+  left: 5px;
 }
-.caption-container::before{
+/*.caption-container::before{
   content: "";
   border-left: 25px solid transparent;
   border-right: 15px solid transparent;
@@ -49,7 +50,7 @@ body{
   top:-12.5px;
   transform: translateY(-50%);
 
-}
+}*/
 .img-container{
   position: relative;
 }
