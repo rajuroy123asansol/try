@@ -251,9 +251,14 @@ footer a{
     display: none;
   }
  
-   #herotittle{
-     
-   }   
+  .feat{
+    align-items: center;
+    justify-content: center;
+    margin: 45px auto;
+  }
+  .feat p{
+    text-align: center !important;
+  }
   .hero{
     height:  95vh;
     width: 100vw;
