@@ -41,22 +41,22 @@ body{
   transform: translateX(-50%);
 }
 #user0{
-  background: url(https://drive.google.com/file/d/1Nw0LWqWNgs-Hcdv0fj4eLaonH1iNcfuA/view?usp=drivesdk);
+  background: url(../media/raju.jpg);
   background-size: cover;
 }
 #user1{
-    background: url(https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60);
+    background: url(../media/malay.jpg);
       background-size: cover;
 
 
 }
 #user2{
-  background :url(https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60);
+  background :url(../media/dipanjan.jpg);
   background-size: cover;
 }
 
 #user3{
-  background: url(https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60) ;
+  background: url(../media/samiran.jpg) ;
   background-size:cover;
 }
 #heroimage {
