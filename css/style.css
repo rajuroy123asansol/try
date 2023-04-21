@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+:root{
+  --dark: #006467;
+  --light:#29BBC0;
+  --main:#18898D;
+  --blue : #34A8F9;
+}
+
 * {
     margin: 0;
     padding: 0 ;
@@ -11,7 +19,7 @@
 body{
   overflow-x: hidden !important;
   font-family: "Oxygen";
-  
+ 
    
 }
 
@@ -73,7 +81,27 @@ body{
   font-size: 20px;
 }
 .fw-semibold{
-  color:#0197A6;
+   background: linear-gradient(var(--dark), var(--main), var(--light));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--dark);
+  position: relative;
+  z-index: 12;
+}
+
+h2::before {
+  content: attr(data-text);
+  -webkit-text-stroke: 0 transparent;
+ -webkit-text-fill-color: var(--light);
+  position : absolute;
+  left: -2px ;
+  z-index: -9;
 }
 /*#herotittle {
     display: flex;
@@ -111,7 +139,7 @@ body{
    font-size: 3em;
    font-family: "Dm Serif Display";
    line-height: 60px;
-   
+
    
 }
 #heroimage-container{
@@ -124,8 +152,12 @@ body{
     align-self: flex-start;
 }
 #h1::first-letter{
-    color: #0197A6;
+    color: #42445A00;
     font-size: 2.3em;
+    background: linear-gradient(var(--dark),var(--main),var(--light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 #hero-row{
     display: flex;
@@ -141,8 +173,10 @@ body{
 }
 
 .info-card h1{
-    color: #0197A6;
     font-size: 2.5em;
+     background: linear-gradient(var(--dark), var(--main), var(--light));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 
 .splide__slide img{
@@ -222,6 +256,7 @@ body{
 footer{
   width: 100vw;
   overflow-x: hidden !important;
+  background:linear-gradient(to top left,var(--dark),var(--main),var(--light));
 }
 footer a{
   text-decoration: none !important;
