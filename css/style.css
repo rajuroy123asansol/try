@@ -86,6 +86,10 @@ body{
    -webkit-text-fill-color: transparent;
 }
 
+a{
+  text-decoration: none;
+}
+
 h2{
   font-weight: bold;
   font-size: 2rem;
@@ -103,6 +107,16 @@ h2::before {
   left: -2px ;
   z-index: -9;
 }
+h2::after{
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background: var(--light);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50px;
+}
 /*#herotittle {
     display: flex;
     flex-flow: column;
@@ -119,13 +133,26 @@ h2::before {
 .bn62 {
   color: #0197A6;
   background-color: #C8F0F4 ;
-  border-radius: 50px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3em;
   width: 8em;
   font-size: large;
+  font-weight: 600;
+  border: none;
+  outline-color: none;
+}
+.bn62-sm{
+  color: white;
+  background-color: var(--main);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 7em;
   font-weight: 600;
   border: none;
   outline-color: none;
