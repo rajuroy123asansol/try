@@ -146,14 +146,14 @@ h2::after{
 }
 .bn62-sm{
   color: white;
-  background-color: var(--main);
+  background: linear-gradient(to top left,var(--dark),var(--main),var(--light));
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2em;
   width: 7em;
-  font-weight: 600;
+  font-weight: 400;
   border: none;
   outline-color: none;
 }
@@ -197,6 +197,11 @@ h2::after{
     margin-top: 60px !important;
     color: #7D7D7D;
     
+}
+.soc i{
+  background: linear-gradient(var(--dark), var(--main), var(--light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .info-card h1{
@@ -287,6 +292,10 @@ footer{
 }
 footer a{
   text-decoration: none !important;
+}
+iframe{
+  box-shadow: 3px 3px 10px #42445A;
+  border: 5px solid white;
 }
 @media (orientation: landscape) {
     #hero-row {

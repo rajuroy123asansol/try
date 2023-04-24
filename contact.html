@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -35,28 +35,28 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="media/og.jpg">
   <style>
-    div{
-     
-    }
-    .payment-page{
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-items: center;
-      flex-flow: column;
-    }
-    .im{
+    .soc{
       display: flex;
       flex-flow: column;
       justify-content: center;
       align-items: center;
+    }
+    #contact{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      min-height: 80vh;
+    }
+    .soc i{
+      font-size: 30px;
     }
   </style>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-md navbar-light ">
-      <div class="container-fluid " id="nav">
+      <div class="container-fluid" id="nav">
           <a class="navbar-brand" href="#"><img src="media/logo.svg"class="brand-logo" width="50" height="50" alt="" /></a> <img src="https://2no.co/1P5gJ4" alt="" />
           <button class="navbar-toggler navb" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" >
               <span class="navbar-toggler-icon"></span>
@@ -67,10 +67,7 @@
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="gallery.html">gallery</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">courses</a>
+                      <a class="nav-link" href="gallery.html"> gallery</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#description">about us</a>
@@ -81,41 +78,72 @@
                   <li class="nav-item">
                       <a class="nav-link" href="#">Contact us</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="bn62-sm nav-link" href="Donate.html">Donae Us</a>
+                  </li>
               </ul>
           </div>
       </div>
   </nav>
-  <section class="payment-page p-4">
-    <h2 data-text="Banking Details">Banking Details</h2>
-    <div class="container-fluid">
+  <section id="contact" >
+   <div class="container-fluid text-muted">
      <div class="row">
-      <div class="col-sm im">
-        <img src="media/payment.svg" alt="media/p">
-      </div>
-      <div class="col-sm">
-        <div class="p-4">
-          <img src="media/bank.svg" alt="media/bank.svg" id="banklogo">
-        </div>
-         <label for="account">Account holder name</label>
-         <div class="input-group flex-nowrap pb-4">
-           <span class="input-group-text" id="addon-wrapping"><i class="bi bi-person-fill"></i></span>
-           <input type="text" class="form-control read-only" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="account" value="Swamiji Cultural Trust" readonly disabled>
+       <div class="col-sm con-ban">
+         <img src="media/Contact.svg" alt="">
+       </div>
+       <div class="col-sm con-ban">
+         <div class="row mb-2">
+           <div class="col-2 p-0 text-end">
+            <i class="bi bi-building-fill"></i>
+           </div>
+           <div class="col-10">
+             Bogra Colony, Asansol <br>
+             District:West Burdwan <br>
+             Pin : 7133332, West Bengal , India
+           </div>
          </div>
-       <label for="account">Account number</label>
-        <div class="input-group flex-nowrap pb-4">
-          <span class="input-group-text" id="addon-wrapping"><i class="bi bi-bank2"></i></span>
-          <input type="text" class="form-control read-only" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="account" value="3774703783" readonly disabled>
-        </div>
-       <label for="account">IFSC Code</label>
-        <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-geo-alt-fill"></i></span>
-            <input type="text" class="form-control read-only" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="account" value="CBIN0283186" readonly disabled>
-          </div>
-      </div>
-     </div> 
-    </div>
+         <div class="row mb-2">
+           <div class="col-2 p-0 text-end">
+             <i class="bi bi-telephone-fill"></i>
+           </div>
+           <div class="col-10">
+             <a href="tel:+917908482969" class="text-muted">+91 7908482969</a><br>
+             <a href="tel:+918250043199" class="text-muted">+91 8250043199</a>
+            
+           </div>
+         </div>
+         <div class="row mb-2">
+           <div class="col-2 p-0 text-end">
+             <i class="bi bi-envelope-at-fill"></i>
+           </div>
+           <div class="col-10">
+             <a href="mailto:swamijitrust2018@gmail.com" class="text-muted">swamijitrust2018@gmail.com</a><br>
+        
+           </div>
+         </div>
+         <div class="p-4">
+         <div class="ratio p-4 ratio-4x3">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.5715732268513!2d86.94932547754368!3d23.691274491039458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71f78dc6e6993%3A0x58a6040fd4355f40!2sSwamiji%20Cultural%20Trust!5e0!3m2!1sen!2sin!4v1682330256748!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+           </div>
+     </div>
+       <div class="container-fluid soc">
+         Follow us 
+         <div class="container-fluid text-center mb-5">
+           <a href="https://www.facebook.com/swamijitrust2018?mibextid=ZbWKwL" class=" me-4">
+             <i class="bi bi-facebook"></i>
+           </a>
+           <a href="" class=" me-4">
+             <i class="bi bi-youtube"></i>
+           </a>
+           <a href="https://www.instagram.com/swamijiculturaltrust/?igshid=YmMyMTA2M2Y%3D" class=" me-4">
+             <i class="bi bi-instagram"></i>
+           </a>
+         </div>
+       </div>
+       </div>
+     </div>
+   </div> 
   </section>
-
   <section class=" bg-light text-light">
 <!-- Remove the container if you want to extend the Footer to full width. -->
   <!-- Footer -->
