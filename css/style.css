@@ -162,6 +162,15 @@ h2::after{
     color:#C8F0F4;
 
 }
+.feedback .feed-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback img{
+  width: 100%;
+}
+
 #herotittle h1{
    font-size: 3em;
    font-family: "Dm Serif Display";
