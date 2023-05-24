@@ -90,7 +90,7 @@ a{
   text-decoration: none;
 }
 
-h2{
+.semih{
   font-weight: bold;
   font-size: 2rem;
   -webkit-text-fill-color: transparent;
@@ -99,7 +99,7 @@ h2{
   z-index: 12;
 }
 
-h2::before {
+.semih::before {
   content: attr(data-text);
   -webkit-text-stroke: 0 transparent;
  -webkit-text-fill-color: var(--light);
@@ -107,7 +107,7 @@ h2::before {
   left: -2px ;
   z-index: -9;
 }
-h2::after{
+.semih::after{
   content: " ";
   width: 100px;
   height: 5px;
@@ -366,7 +366,6 @@ iframe{
    background-position: top right;
    background-size: contain;
    background-repeat: no-repeat;
-   background-color: #D3FBFF;
  }
  .splide {
    padding-top: 40px !important;
