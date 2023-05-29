@@ -157,6 +157,11 @@ a{
   border: none;
   outline-color: none;
 }
+
+.bn62-sm:hover{
+  background:var(--light);
+  color: black;
+}
 .bn62:hover{
     background: #0197A6;
     color:#C8F0F4;

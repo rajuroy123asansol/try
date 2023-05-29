@@ -10,14 +10,15 @@ for (var i = 0; i < elms.length; i++) {
 document.getElementById("feedback").addEventListener("click",()=>{
   
 var text=document.getElementById("example").value;
+var email = document.getElementById("email").value;
 
 if(text){
-  fetch(url+text).then(()=>{
+  fetch(url+email+" :"+text).then(()=>{
     Swal.fire({
       icon: 'success',
-      title: 'Your work has been saved',
+      title: 'Thank you for your feedback',
       showConfirmButton: false,
-      timer: 1500
+      timer: 3000
     })
   });
 }
