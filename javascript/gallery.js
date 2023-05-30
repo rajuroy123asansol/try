@@ -40,16 +40,20 @@ listAll(listRef)
       getDownloadURL(itemRef).then((link)=>{
     
         var parent = document.createElement("div");
-        var img = document.createElement("img");
-        var text = document.createElement("p");
-        img.setAttribute('src', link);
-        parent.appendChild(img);
+        parent.setAttribute("class","card p-0 m-3");
+        var text ='';
+        var Date_of_event = "";
         getMetadata(itemRef).then((data) => {
-          console.log(data.customMetadata.Date);
-          text.innerHTML=data.customMetadata.Description;
-        })
-        parent.appendChild(text);
+          Date_of_event= data.customMetadata.Date;
+          text= data.customMetadata.Description;
+          console.log(data.customMetadata.Description);
+          console.log(text);
+        parent.innerHTML=`<img src="${link}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">${Date_of_event}</small></p>            <p class="card-text">${text}</p>`;
         container.appendChild(parent);
+        
+        })
         
         
       }) 
