@@ -109,24 +109,24 @@ a{
   align-items: center;
   border-radius: 20px;
   color:var(--dark);
- 
 }
 #quote h2::before{
   content: open-quote;
-  font-size: 50px;
+  font-size: 90px;
    position: absolute;
    z-index: -2;
    margin: 0;
    padding: 0;
   color: #DFDFDF;
-  height: 30px;
-  top: -10;
+  text-indent: -0.35em;
+
   
 }
 #quote h2{
   z-index: 3;
- font-size: 20px;
+ font-size: 25px;
  position: relative;
+
 }
 .semih::before {
   content: attr(data-text);
