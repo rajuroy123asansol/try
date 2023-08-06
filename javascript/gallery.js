@@ -47,7 +47,7 @@ listAll(listRef)
           Date_of_event= data.customMetadata.Date;
           text= data.customMetadata.Description;
           console.log(data.customMetadata.Description);
-          console.log(text);
+         document.getElementById("load").style.display="none";
         parent.innerHTML=`<img src="${link}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text"><small class="text-muted">${Date_of_event}</small></p>            <p class="card-text">${text}</p>`;

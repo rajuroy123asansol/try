@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
 
 :root{
   --dark: #006467;
@@ -98,7 +99,35 @@ a{
   position: relative;
   z-index: 12;
 }
-
+.quotes{
+  font-family: "Laila";
+}
+#quote{
+ /* background: linear-gradient(to top left,#AFFFFB,#D6FFFD,#F1FFFE,#FBFBFB);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color:var(--dark);
+ 
+}
+#quote h2::before{
+  content: open-quote;
+  font-size: 50px;
+   position: absolute;
+   z-index: -2;
+   margin: 0;
+   padding: 0;
+  color: #DFDFDF;
+  height: 30px;
+  top: -10;
+  
+}
+#quote h2{
+  z-index: 3;
+ font-size: 20px;
+ position: relative;
+}
 .semih::before {
   content: attr(data-text);
   -webkit-text-stroke: 0 transparent;
