@@ -7,7 +7,7 @@ AOS.init();
 var elms = document.getElementsByClassName('splide');
 
 for (var i = 0; i < elms.length; i++) {
-    new Splide(elms[i]).mount();
+    new Splide(elms[i]).mount( window.splide.Extensions);
 }
 document.getElementById("feedback").addEventListener("click",()=>{
   

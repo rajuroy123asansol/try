@@ -269,9 +269,12 @@ a{
 
 .splide__slide img{
     width: 100%;
+    object-fit: scale-down;
+    overflow: hidden;
 }
 .splide{
-   width: 80%; 
+   width: 80%;
+   overflow: hidden;
    margin: auto;
 }
 #whatdo{
